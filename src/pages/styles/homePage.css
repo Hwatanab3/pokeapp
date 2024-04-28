@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 20px 0;
     align-items: center;
     background: url(../../../public/assets/bg_home.jpg);
