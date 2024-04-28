@@ -1,0 +1,9 @@
+.poke__music {
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 3rem;
+    background-color: #dddddda2;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
