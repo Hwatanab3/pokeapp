@@ -21,7 +21,7 @@ const HomePage = () => {
 
     return (
         <section className='pokeHome'>
-            <img src="../../assets/banner.png" alt="Title banner" />
+            <img className='pokeHome__banner' src="../../assets/banner.png" alt="Title banner" />
             <div className='pokeHome__decoration'>
                 <div className='pokeHome__container'>
                     <h1>Hi Trainer!</h1>
