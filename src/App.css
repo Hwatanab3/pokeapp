@@ -77,7 +77,7 @@ a:focus {
 .poke__footer {
   position: fixed;
   width: 100vw;
-  height: 100px;
+  height: 80px;
   left: 0;
   bottom: 0;
   z-index: 5;
