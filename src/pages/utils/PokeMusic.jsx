@@ -12,10 +12,10 @@ const PokeMusic = () => {
         "../../../assets/tracks/THE POKÉMON THEME - (METAL COVER).m4a",
         "../../../assets/tracks/ALL POKEMON THEME SONGS.m4a",
         "../../../assets/tracks/Pokemon EPIC Medley.m4a",
-        "../../../assets/tracks/#Pokemon Theme Saxy Style.opus",
+        "../../../assets/tracks/Pokemon Theme Saxy Style.opus",
         "../../../assets/tracks/POKÉRAP LATINO COVER!.m4a",
         "../../../assets/tracks/Phoenix - Worlds 2019.opus",
-        "../../../assets/tracks/Anime Openings & Endings Mega Mix #1.m4a",
+        "../../../assets/tracks/Anime Openings & Endings Mega Mix.m4a",
 
     ];
 
