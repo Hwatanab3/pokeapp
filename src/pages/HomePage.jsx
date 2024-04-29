@@ -33,9 +33,9 @@ const HomePage = () => {
                 </form>
             </div>
             <footer className='poke__footer'>
-                <PokeMusic
-                    src="../../assets/poke_song.m4a"
-                />
+                {/* <PokeMusic
+                   src="../../assets/poke_song.m4a" 
+                /> */}
                 <span>by HWdev </span>
             </footer>
         </section>

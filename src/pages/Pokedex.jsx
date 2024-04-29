@@ -6,6 +6,7 @@ import PokeCard from '../components/Pokedex/PokeCard';
 import PokeSelect from '../components/Pokedex/PokeSelect';
 import Pagination from '../components/Pokedex/Pagination.jsx';
 import PokeLoader from './PokeLoader';
+import PokeMusic from './utils/PokeMusic.jsx';
 
 const Pokedex = () => {
 
@@ -53,6 +54,9 @@ const Pokedex = () => {
         <>
             <header className='poke__header'>
                 <img src="../../assets/banner.png" alt="" />
+                {/* <PokeMusic
+                    src="../../assets/poke_song.m4a"
+                /> */}
             </header>
             <section className='pokedex'>
                 <div className='pokedex__info'>
@@ -110,6 +114,7 @@ const Pokedex = () => {
                     }
                 </div>
             </section>
+
         </>
     )
 }

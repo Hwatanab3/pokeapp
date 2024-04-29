@@ -6,8 +6,8 @@ const Pagination = ({ pokemonsPerPage, totalPokemons, paginate, currentPage }) =
 
     const totalPages = Math.ceil(totalPokemons / pokemonsPerPage);
 
-    const startPage = Math.max(1, currentPage - 2);
-    const endPage = Math.min(totalPages, currentPage + 2);
+    const startPage = Math.max(1, currentPage - 1);
+    const endPage = Math.min(totalPages, currentPage + 1);
 
     for (let i = startPage; i <= endPage; i++) {
         pageNumbers.push(i)

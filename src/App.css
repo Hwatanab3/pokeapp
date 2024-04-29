@@ -63,6 +63,7 @@ a:focus {
   background-size: cover;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   padding-left: 10px;
   border-bottom: 4px solid #F10B31;
   box-shadow: 0px 10px 10px .01px #949494ad;

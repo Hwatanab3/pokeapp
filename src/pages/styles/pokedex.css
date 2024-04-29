@@ -96,7 +96,7 @@
 }
 
 .pagination {
-    max-width: max-content;
+    max-width: 300px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;

@@ -1,9 +1,52 @@
 .poke__music {
     width: 100px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 15;
     border: 1px solid transparent;
     border-radius: 10px;
     height: 3rem;
     background-color: #dddddda2;
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.music__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+ion-icon {
+    font-size: 40px;
+    color: white;
+}
+
+.music__container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F10B31;
+    border: none;
+    height: 50px;
+    min-width: 50px;
+    padding: 0 10px;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.music__container button:hover {
+    background-color: #f10b31ea;
+    border: 2px solid #dfdfdf;
+}
+
+@media (max-width: 500px) {
+    .poke__music {
+        top: unset;
+        left: unset;
+        bottom: 10px;
+        right: 10px;
+    }
 }
