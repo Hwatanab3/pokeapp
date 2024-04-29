@@ -1,5 +1,5 @@
 .pokecard {
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(255, 255, 255);
     position: relative;
     width: 250px;
     border: 5px solid;
@@ -14,8 +14,29 @@
 .pokecard:hover {
     border-color: white;
     background-color: rgb(59, 59, 59);
-    transform: scale(1.05);
+    transform: scale(0.7);
     color: white;
+}
+
+.pokecard:hover .pokecard__img {
+    transform: scale(2);
+}
+
+.pokecard:hover h3 {
+    position: fixed;
+    top: 350px;
+    transform: scale(3);
+    max-width: 80px;
+    text-align: center;
+}
+
+
+.pokecard h3 {
+    transition: 0.3s ease-in-out;
+}
+
+.pokecard__gray {
+    color: #707070;
 }
 
 .pokecard__back {
@@ -28,6 +49,7 @@
 .pokecard__img {
     width: 70%;
     z-index: 2;
+    transition: 0.3s ease-in-out;
 }
 
 .pokecard__types {
@@ -61,147 +83,257 @@
 /* ==>> colores <<==*/
 
 .normal {
-    background-color: pink;
+    background: url(../../../../public/assets/decoration/01_normal.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .fighting {
-    background-color: orangered;
+    background: url(../../../../public/assets/decoration/02_fighting.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .flying {
-    background-color: white;
+    background: url(../../../../public/assets/decoration/03_flying.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .poison {
-    background-color: violet;
+    background: url(../../../../public/assets/decoration/04_poison.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .ground {
-    background-color: brown;
+    background: url(../../../../public/assets/decoration/05_ground.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .rock {
-    background-color: slategray;
+    background: url(../../../../public/assets/decoration/06_rock.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .bug {
-    background-color: lightgreen;
+    background: url(../../../../public/assets/decoration/07_bug.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .ghost {
-    background-color: rebeccapurple;
+    background: url(../../../../public/assets/decoration/08_ghost.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .steel {
-    background-color: steelblue;
+    background: url(../../../../public/assets/decoration/09_steel.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .fire {
-    background-color: red;
+    background: url(../../../../public/assets/decoration/10_fire.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .water {
-    background-color: dodgerblue;
+    background: url(../../../../public/assets/decoration/11_water.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .grass {
-    background-color: green;
+    background: url(../../../../public/assets/decoration/12_grass.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .electric {
-    background-color: yellow;
+    background: url(../../../../public/assets/decoration/13_electric.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .psychic {
-    background-color: darkmagenta;
+    background: url(../../../../public/assets/decoration/14_psychic.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .ice {
-    background-color: aqua;
+    background: url(../../../../public/assets/decoration/15_ice.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .dragon {
-    background-color: lemonchiffon;
+    background: url(../../../../public/assets/decoration/16_dragon.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .dark {
-    background-color: black;
+    background: url(../../../../public/assets/decoration/17_dark.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 .fairy {
-    background-color: salmon;
+    background: url(../../../../public/assets/decoration/18_fairy.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 /* <<== modificador bordes ==>> */
 
 .pokecard--normal {
-    border-color: pink;
+    border-color: #9FA19F;
 }
 
 .pokecard--fighting {
-    border-color: orangered;
+    border-color: #FF8000;
 }
 
 .pokecard--flying {
-    border-color: white;
+    border-color: #81b9ef;
 }
 
 .pokecard--poison {
-    border-color: violet;
+    border-color: #8f41cb;
 }
 
 .pokecard--ground {
-    border-color: brown;
+    border-color: #915121;
 }
 
 .pokecard--rock {
-    border-color: slategray;
+    border-color: #afa981;
 }
 
 .pokecard--bug {
-    border-color: lightgreen;
+    border-color: #91a119;
 }
 
 .pokecard--ghost {
-    border-color: rebeccapurple;
+    border-color: #704170;
 }
 
 .pokecard--steel {
-    border-color: steelblue;
+    border-color: #60a1b8;
 }
 
 .pokecard--fire {
-    border-color: red;
+    border-color: #e62829;
 }
 
 .pokecard--water {
-    border-color: dodgerblue;
+    border-color: #2980ef;
 }
 
 .pokecard--grass {
-    border-color: green;
+    border-color: #3fa129;
 }
 
 .pokecard--electric {
-    border-color: yellow;
+    border-color: #fac000;
 }
 
 .pokecard--psychic {
-    border-color: darkmagenta;
+    border-color: #ef4179;
 }
 
 .pokecard--ice {
-    border-color: aqua;
+    border-color: #3fd8ff;
 }
 
 .pokecard--dragon {
-    border-color: lemonchiffon;
+    border-color: #5061e1;
 }
 
 .pokecard--dark {
-    border-color: black;
+    border-color: #50413f;
 }
 
 .pokecard--fairy {
-    border-color: salmon;
+    border-color: #ef71ef;
+}
+
+/* ==>> colores de los textos <<== */
+
+.cardname--normal {
+    color: #9FA19F;
+}
+
+.cardname--fighting {
+    color: #FF8000;
+}
+
+.cardname--flying {
+    color: #81b9ef;
+}
+
+.cardname--poison {
+    color: #8f41cb;
+}
+
+.cardname--ground {
+    color: #915121;
+}
+
+.cardname--rock {
+    color: #afa981;
+}
+
+.cardname--bug {
+    color: #91a119;
+}
+
+.cardname--ghost {
+    color: #704170;
+}
+
+.cardname--steel {
+    color: #60a1b8;
+}
+
+.cardname--fire {
+    color: #e62829;
+}
+
+.cardname--water {
+    color: #2980ef;
+}
+
+.cardname--grass {
+    color: #3fa129;
+}
+
+.cardname--electric {
+    color: #fac000;
+}
+
+.cardname--psychic {
+    color: #ef4179;
+}
+
+.cardname--ice {
+    color: #3fd8ff;
+}
+
+.cardname--dragon {
+    color: #5061e1;
+}
+
+.cardname--dark {
+    color: #50413f;
+}
+
+.cardname--fairy {
+    color: #ef71ef;
 }

@@ -30,19 +30,19 @@ const PokeCard = ({ url }) => {
                         <figure className='pokecard__img'>
                             <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
                         </figure>
-                        <h3 className='pokecard__name'>{pokemon?.name.toUpperCase()}</h3>
+                        <h3 className={`pokecard__name cardname--${pokemon?.types[0].type.name}`}>{pokemon?.name.toUpperCase()}</h3>
                         <ul className='pokecard__types'>
                             {
                                 pokemon?.types.map(type => (<li className={`slot${type.slot}`} key={type.type.name}>{type.type.name}</li>))
                             }
                         </ul>
-                        <span>Type</span>
+                        <span className='pokecard__gray'>Type</span>
                         <hr />
                         <ul className='pokecard__stats'>
                             {
                                 pokemon?.stats.map((stat, index) => (
                                     stat.stat.name.includes('-') ||
-                                    <li key={index}><span>{stat.stat.name} </span><span>{stat.base_stat}</span>
+                                    <li key={index}><span className='pokecard__gray'>{stat.stat.name} </span><span className={`cardname--${pokemon?.types[0].type.name}`}>{stat.base_stat}</span>
                                     </li>))
                             }
                         </ul>

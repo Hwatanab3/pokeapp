@@ -26,7 +26,7 @@ const Pokedex = () => {
         } else {
             getPokemons(url)
         }
-    }, [selectValue,]);
+    }, [selectValue]);
 
     const textInput = useRef();
 
@@ -49,6 +49,11 @@ const Pokedex = () => {
     const currentSearchPokemons = pokemons?.results?.filter(pokeSearch).slice(indexOfFirstPokemon, indexOfLasPokemon);
 
     const paginate = pageNumber => setCurrentPage(pageNumber)
+
+    console.log(pokemons);
+    console.log(pokemons?.count);
+    console.log(pokemons?.results?.filter(pokeSearch).length);
+
 
     return (
         <>
@@ -76,7 +81,7 @@ const Pokedex = () => {
                         inputValue === '' ?
                             <Pagination
                                 pokemonsPerPage={pokemonsPerPage}
-                                totalPokemons={pokemons?.count}
+                                totalPokemons={selectValue ? pokemons?.results?.filter(pokeSearch).length : pokemons?.count}
                                 paginate={paginate}
                                 currentPage={currentPage}
                             />
