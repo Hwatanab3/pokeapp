@@ -16,11 +16,17 @@ const Pokedex = () => {
     useEffect(() => {
         if (selectValue) {
             getType(selectValue);
+        } if (inputValue === '') {
+            const url = 'https://pokeapi.co/api/v2/pokemon?limit=20/';
+            getPokemons(url);
+        } if (inputValue) {
+            const url = 'https://pokeapi.co/api/v2/pokemon?limit=100000/';
+            getPokemons(url);
         } else {
             const url = 'https://pokeapi.co/api/v2/pokemon?limit=100/';
             getPokemons(url);
         }
-    }, [selectValue])
+    }, [selectValue, inputValue])
 
     console.log(inputValue);
 
