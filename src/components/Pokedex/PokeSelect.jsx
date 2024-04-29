@@ -23,7 +23,7 @@ const PokeSelect = ({ setSelectValue }) => {
         <select ref={selectOption} onChange={handleChange}>
             <option value="">All Pokemons</option>
             {
-                types?.results.map((type, index) => (<option key={type.url} value={type.url}>{type.name}</option>))
+                types?.results?.map(type => (<option key={type.url} value={type.url}>{type.name}</option>))
             }
         </select>
     )

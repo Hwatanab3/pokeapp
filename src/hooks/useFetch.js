@@ -8,6 +8,7 @@ const useFetch = () => {
     const [isLoading, setIsLoading] = useState(true)
 
     const getApi = (url) => {
+        setIsLoading(true);
         axios.get(url)
             .then(res => {
                 setApiData(res.data);
@@ -21,6 +22,7 @@ const useFetch = () => {
     }
 
     const getType = (url) => {
+        setIsLoading(true)
         axios.get(url)
             .then(res => {
                 setApiData({
@@ -29,7 +31,10 @@ const useFetch = () => {
                 setPokeError(false)
             })
             .catch(err => console.log(err))
+            .finally(() => { setIsLoading(false) })
     }
+
+
 
     return [apiData, getApi, getType, pokeError, isLoading]
 }

@@ -68,7 +68,7 @@ const PokeRadar = ({ pokemon }) => {
                 min: 0,
                 max: 150,
                 angleLines: {
-                    borderDash: [0, 25, 150],
+                    borderDash: [0, 10, 150],
                     lineWidth: .8,
                     color: '#ababab',
                 },
